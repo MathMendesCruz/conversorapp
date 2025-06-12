@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.set_page_config(page_title="Formatador de Contatos CSV", layout="centered")
-st.title("Formatador de Contatos CSV by Math Netfit")
+st.title("Formatador de contatos para o OPA!")
 
 uploaded_file = st.file_uploader("Envie seu arquivo CSV", type=["csv"])
 
