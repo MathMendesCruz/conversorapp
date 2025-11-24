@@ -53,7 +53,6 @@ if uploaded_file:
                         {"name": nome_extra.strip(), "whatsapp": whatsapp_extra.strip()}
                     )
                     st.success("Contato adicionado.")
-                    st.experimental_rerun()
                 else:
                     st.error("Preencha nome e WhatsApp antes de adicionar.")
 
@@ -65,7 +64,6 @@ if uploaded_file:
                 col1.write(f"{contato['name']} — {contato['whatsapp']}")
                 if col2.button("Remover", key=f"remover_{idx}"):
                     st.session_state["contatos_extras"].pop(idx)
-                    st.experimental_rerun()
 
         # Verifica seleção e formata saída
         if col_nome and col_whatsapp:
